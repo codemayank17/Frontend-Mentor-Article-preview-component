@@ -1,0 +1,134 @@
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+$DesaturatedDarkBlue: hsl(214, 17%, 51%);
+$GrayishBlue: hsl(212, 23%, 69%);
+$LightGrayishBlue: hsl(210, 46%, 95%);
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: $LightGrayishBlue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .cardimage {
+      width: 100%;
+    }
+
+    .cardtitle {
+      margin-top: 0.8em;
+      padding: 1.5em;
+      h5 {
+        color: $VeryDarkGrayishBlue;
+        font-size: 1.1em;
+      }
+    }
+
+    .cardbody {
+      padding: 0px 1.5em 1.5em 1.5em;
+      p {
+        line-height: 1.7em;
+        font-size: 0.85em;
+        color: $DesaturatedDarkBlue;
+      }
+    }
+
+    .profileinfo {
+      position: relative;
+
+      .namelabel {
+        padding: 1.5em;
+        display: flex;
+
+        align-items: center;
+        .avatarimage {
+          width: 3em;
+          border-radius: 50px;
+          overflow: hidden;
+        }
+        .det {
+          margin-left: 1.5em;
+          .name {
+            font-size: 0.9em;
+            font-weight: 700;
+            color: $VeryDarkGrayishBlue;
+          }
+          .date {
+            font-size: 0.9em;
+            font-weight: 500;
+            color: $GrayishBlue;
+          }
+        }
+
+        .shareicon {
+          margin-left: auto;
+          background-color: $LightGrayishBlue;
+          padding: 0.4em 0.6em;
+          border-radius: 50px;
+          z-index: 5;
+          cursor: pointer;
+        }
+      }
+
+      .social {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: $VeryDarkGrayishBlue;
+        width: 100%;
+        height: 100%;
+        padding: 1.5em;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+        span {
+          color: $DesaturatedDarkBlue;
+          font-size: 0.9em;
+          letter-spacing: 0.4em;
+          margin-right: 1em;
+        }
+        img {
+          margin-right: 1em;
+          cursor: pointer;
+        }
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .card {
+      display: flex;
+      width: 50%;
+      .cardtitle {
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+      }
+
+      .cardbody {
+        padding: 0px 1.5em 0.5em 1.5em;
+      }
+      .profileinfo {
+        padding: 0.5em 0;
+        .namelabel {
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+          .avatarimage {
+            width: 2.5em;
+          }
+        }
+      }
+    }
+  }
+}

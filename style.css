@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #ecf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+body .card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+body .card .cardimage {
+  width: 100%;
+}
+
+body .card .cardtitle {
+  margin-top: 0.8em;
+  padding: 1.5em;
+}
+
+body .card .cardtitle h5 {
+  color: #48556a;
+  font-size: 1.1em;
+}
+
+body .card .cardbody {
+  padding: 0px 1.5em 1.5em 1.5em;
+}
+
+body .card .cardbody p {
+  line-height: 1.7em;
+  font-size: 0.85em;
+  color: #6d7f97;
+}
+
+body .card .profileinfo {
+  position: relative;
+}
+
+body .card .profileinfo .namelabel {
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .card .profileinfo .namelabel .avatarimage {
+  width: 3em;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+body .card .profileinfo .namelabel .det {
+  margin-left: 1.5em;
+}
+
+body .card .profileinfo .namelabel .det .name {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #48556a;
+}
+
+body .card .profileinfo .namelabel .det .date {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #9eafc2;
+}
+
+body .card .profileinfo .namelabel .shareicon {
+  margin-left: auto;
+  background-color: #ecf2f8;
+  padding: 0.4em 0.6em;
+  border-radius: 50px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+body .card .profileinfo .social {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #48556a;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body .card .profileinfo .social span {
+  color: #6d7f97;
+  font-size: 0.9em;
+  letter-spacing: 0.4em;
+  margin-right: 1em;
+}
+
+body .card .profileinfo .social img {
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  body .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+  body .card .cardtitle {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+  }
+  body .card .cardbody {
+    padding: 0px 1.5em 0.5em 1.5em;
+  }
+  body .card .profileinfo {
+    padding: 0.5em 0;
+  }
+  body .card .profileinfo .namelabel {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  body .card .profileinfo .namelabel .avatarimage {
+    width: 2.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
