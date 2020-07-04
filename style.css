@@ -134,7 +134,7 @@ body .card .profileinfo .social img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
+    width: 700px;
   }
   body .card .cardtitle {
     padding-top: 1.5em;
@@ -144,6 +144,7 @@ body .card .profileinfo .social img {
     padding: 0px 1.5em 0.5em 1.5em;
   }
   body .card .profileinfo {
+    margin-top: auto;
     padding: 0.5em 0;
   }
   body .card .profileinfo .namelabel {

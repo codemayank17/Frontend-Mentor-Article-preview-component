@@ -21,7 +21,6 @@ body {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-
     .cardimage {
       width: 100%;
     }
@@ -110,7 +109,10 @@ body {
   @media only screen and (min-width: 768px) {
     .card {
       display: flex;
-      width: 50%;
+      width: 700px;
+      .cardcontent {
+      }
+
       .cardtitle {
         padding-top: 1.5em;
         padding-bottom: 1em;
@@ -120,6 +122,7 @@ body {
         padding: 0px 1.5em 0.5em 1.5em;
       }
       .profileinfo {
+        margin-top: auto;
         padding: 0.5em 0;
         .namelabel {
           padding-top: 0.5em;
